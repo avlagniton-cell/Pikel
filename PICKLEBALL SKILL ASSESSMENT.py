@@ -145,6 +145,7 @@ elif st.session_state.page == 'instructions':
     • You must answer every question.
     • At the end, you can download your Certificate and Transcript.
     """)
+    st.caption("🔒 Privacy Note: Your data and photo are processed in real-time and are NOT stored on our servers. Once you close this tab, all information is deleted.")
     if st.button("START ASSESSMENT"):
         st.session_state.page = 'test'
         st.rerun()
@@ -205,4 +206,5 @@ elif st.session_state.page == 'result':
 
     if st.button("RETAKE TEST"):
         st.session_state.page = 'profile'
+
         st.rerun()
