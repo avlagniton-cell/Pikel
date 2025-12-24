@@ -8,7 +8,7 @@ import io
 PICKLEBALL_IMAGE = "https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDEUluJzf2yLeuzTPV3D1WrA04Gc.jpg" 
 
 st.image(PICKLEBALL_IMAGE, width=100)
-st.title("SAP-SAP Pickleball Assessment")
+st.title("Pickleball Skill Assessment")
 
 st.set_page_config(page_title = "Player Registration")
 # Developed by AlwinLagnitonBSCS
@@ -212,6 +212,7 @@ elif st.session_state.page == 'result':
         st.session_state.page = 'profile'
 
         st.rerun()
+
 
 
 
