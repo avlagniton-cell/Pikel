@@ -5,13 +5,12 @@ import textwrap
 import io
 
 # --- APP CONFIGURATION ---
-#st.set_page_config(page_title="SAP-SAP Pickleball Assessment", page_icon="https://stock.adobe.com/search?k=pickle-ball", layout="centered")
 PICKLEBALL_IMAGE = "https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDEUluJzf2yLeuzTPV3D1WrA04Gc.jpg" 
 
 st.image(PICKLEBALL_IMAGE, width=100)
 st.title("SAP-SAP Pickleball Assessment")
 # Developed by AlwinLagnitonBSCS
-st.markdown("<h5 style='text-align: center; color: gray;'>Developed by AlwinLagnitonBSCS</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='text-align: center; color: gray;'>Developed by AlwinLagniton, BSCS</h5>", unsafe_allow_html=True)
 
 # --- INITIALIZE SESSION STATE ---
 if 'page' not in st.session_state:
@@ -211,5 +210,6 @@ elif st.session_state.page == 'result':
         st.session_state.page = 'profile'
 
         st.rerun()
+
 
 
