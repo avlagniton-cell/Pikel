@@ -5,7 +5,7 @@ import textwrap
 import io
 
 # --- APP CONFIGURATION ---
-st.set_page_config(page_title="SAP-SAP Pickleball Assessment", page_icon="🏓", layout="centered")
+st.set_page_config(page_title="SAP-SAP Pickleball Assessment", page_icon="https://stock.adobe.com/search?k=pickle-ball", layout="centered")
 
 # Developed by AlwinLagnitonBSCS
 st.markdown("<h5 style='text-align: center; color: gray;'>Developed by AlwinLagnitonBSCS</h5>", unsafe_allow_html=True)
@@ -208,3 +208,4 @@ elif st.session_state.page == 'result':
         st.session_state.page = 'profile'
 
         st.rerun()
+
