@@ -5,11 +5,13 @@ import textwrap
 import io
 
 # --- APP CONFIGURATION ---
-st.set_page_config(page_title="PLAYER REGISTRATION", page_icon="https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDEUluJzf2yLeuzTPV3D1WrA04Gc.jpg", width=100)
+#st.set_page_config(page_title="PLAYER REGISTRATION", page_icon="https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDEUluJzf2yLeuzTPV3D1WrA04Gc.jpg", width=100)
 PICKLEBALL_IMAGE = "https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDEUluJzf2yLeuzTPV3D1WrA04Gc.jpg" 
 
 st.image(PICKLEBALL_IMAGE, width=100)
 st.title("SAP-SAP Pickleball Assessment")
+
+st.set_page_config(page_title="PLAYER REGISTRATION", page_icon="https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDEUluJzf2yLeuzTPV3D1WrA04Gc.jpg", width=100)
 # Developed by AlwinLagnitonBSCS
 st.markdown("<h5 style='text-align: center; color: gray;'>Developed by AlwinLagniton, BSCS</h5>", unsafe_allow_html=True)
 
@@ -211,6 +213,7 @@ elif st.session_state.page == 'result':
         st.session_state.page = 'profile'
 
         st.rerun()
+
 
 
 
