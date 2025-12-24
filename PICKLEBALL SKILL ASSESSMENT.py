@@ -10,7 +10,7 @@ PICKLEBALL_IMAGE = "https://t3.ftcdn.net/jpg/09/26/69/04/360_F_926690484_av0xyDE
 st.image(PICKLEBALL_IMAGE, width=100)
 st.title("SAP-SAP Pickleball Assessment")
 
-st.set_page_config(page_title = "PLAYER REGISTRATION")
+st.set_page_config(page_title = "Player Registration")
 # Developed by AlwinLagnitonBSCS
 st.markdown("<h5 style='text-align: center; color: gray;'>Developed by AlwinLagniton, BSCS</h5>", unsafe_allow_html=True)
 
@@ -121,7 +121,7 @@ def generate_transcript(data, answers):
 
 # --- PAGE 1: PLAYER PROFILE ---
 if st.session_state.page == 'profile':
-    st.title("🏓 Player Registration")
+    st.title("Player Registration")
     with st.form("profile_form"):
         name = st.text_input("Full Name")
         age = st.text_input("Age")
@@ -212,6 +212,7 @@ elif st.session_state.page == 'result':
         st.session_state.page = 'profile'
 
         st.rerun()
+
 
 
 
